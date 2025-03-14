@@ -14,6 +14,7 @@ export default function Home() {
       <nav className="font-poppins">
         <ul className="flex gap-10 justify-center p-4 font-bold ">
           <li className="cursor-pointer">Home</li>
+          <li className="cursor-pointer">About</li>
           <li className="cursor-pointer">Blog</li>
           <li className="cursor-pointer">Contact</li>
         </ul>
