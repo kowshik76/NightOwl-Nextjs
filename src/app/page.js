@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Poppins } from "@next/font/google";
+import Link from "next/link";
 const poppins = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -13,10 +14,10 @@ export default function Home() {
       </Head>
       <nav className="font-poppins">
         <ul className="flex gap-10 justify-center p-4 font-bold ">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Blog</li>
-          <li className="cursor-pointer">Contact</li>
+         <Link href="/"> <li className="cursor-pointer">Home</li></Link>
+         <Link href="/blogspot/anything"> <li className="cursor-pointer">Blog</li></Link>
+         <Link href="/contact"><li className="cursor-pointer">Contact</li></Link>
+         <Link href="/about"><li className="cursor-pointer">About</li></Link>
         </ul>
       </nav>
       <div className="flex justify-center  ">
