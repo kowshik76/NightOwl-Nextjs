@@ -1,5 +1,6 @@
 {
-    "Name":"Second Blog",
+    "Name":"Next.js Blog",
 "Description":"This is an Second blog used in my next js project as an demo ",
-"author":"kaushik Ma"
+"author":"kaushik Ma",
+"slug":"second-blog"
 }
