@@ -25,8 +25,8 @@ const Page = () => {
             {/* Blog 1 */}
             {blogs.map((blogitem) => {
               return (
-                <Link href={`/blogspot/${blogitem.slug}`}>
-                  <div key={blogitem.slug} className="h-40 w-100 m-5 rounded-2xl border-2 border-white transition-all duration-500 hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.8)] cursor-pointer">
+                <Link href={`/blogspot/${blogitem.slug}`} key={blogitem.slug}>
+                  <div  className="h-40 w-100 m-5 rounded-2xl border-2 border-white transition-all duration-500 hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.8)] cursor-pointer">
                     <h4 className="text-center m-5 font-bold">
                       {blogitem.Name}
                     </h4>

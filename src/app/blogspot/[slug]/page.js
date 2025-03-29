@@ -8,7 +8,7 @@ const Slug = () => {
     return (
         <>
         <div >
-        <h1 className='text-3xl text-center my-3.5 font-bold'>Title of the page {slug}</h1>
+        <h1 className='text-3xl text-center my-3.5 font-bold'>{slug}</h1>
         
         </div>
         <div className='p-5'>
