@@ -6,7 +6,6 @@ const Page = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    console.log("I m running");
     fetch("http://localhost:3000/api/blogs")
       .then((a) => a.json())
       .then((parsed) => {
@@ -26,12 +25,12 @@ const Page = () => {
             {blogs.map((blogitem) => {
               return (
                 <Link href={`/blogspot/${blogitem.slug}`} key={blogitem.slug}>
-                  <div  className="h-40 w-100 m-5 rounded-2xl border-2 border-white transition-all duration-500 hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.8)] cursor-pointer">
+                  <div className="h-40 w-100 m-5 rounded-2xl border-2 border-white transition-all duration-500 hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.8)] cursor-pointer">
                     <h4 className="text-center m-5 font-bold">
                       {blogitem.Name}
                     </h4>
                     <p className="text-center m-5">
-                     {blogitem.Description.substr(0,100)}
+                      {blogitem.Description.substr(0, 100)}
                     </p>
                   </div>
                 </Link>
